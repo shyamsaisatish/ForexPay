@@ -24,6 +24,10 @@
 			**/constant/*,
 			**/exception/*
 		</sonar.coverage.exclusions>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<sonar.host.url>http://18.221.161.32:9000</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin123</sonar.password>
 	</properties>
 
 	<dependencies>
@@ -73,6 +77,10 @@
 			<id>nexus</id>
 			<url>http://52.172.39.32:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>nexus</id>
+			<url>http://18.221.161.32:8081/nexus/content/repositories/releases</url>
+		</repository>
 	</distributionManagement>
 
 	<build>
